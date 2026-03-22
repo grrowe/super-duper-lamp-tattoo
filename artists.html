@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artists | OBSIDIAN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "outline-variant": "#5a403c",
+              "on-surface": "#e5e2e1",
+              "tertiary": "#bcc3ff",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-container": "#0025c8",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary": "#001a98",
+              "on-surface-variant": "#e3beb8",
+              "on-error-container": "#ffdad6",
+              "outline": "#aa8984",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#690000",
+              "surface-tint": "#ffb4a8",
+              "surface-container-highest": "#353534",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "background": "#131313",
+              "primary-fixed": "#ffdad4",
+              "on-tertiary-fixed": "#000d60",
+              "primary-container": "#8b0000",
+              "secondary-container": "#604403",
+              "secondary": "#e9c176",
+              "on-secondary": "#412d00",
+              "error": "#ffb4ab",
+              "surface-container": "#201f1f",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#261900",
+              "surface-bright": "#393939",
+              "inverse-primary": "#b52619",
+              "on-tertiary-fixed-variant": "#0d2ccc",
+              "surface-variant": "#353534",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface": "#131313",
+              "on-secondary-container": "#dab36a",
+              "secondary-fixed": "#ffdea5",
+              "on-primary-fixed-variant": "#920703",
+              "on-primary-container": "#ff907f",
+              "primary-fixed-dim": "#ffb4a8",
+              "primary": "#ffb4a8",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#dfe0ff",
+              "secondary-fixed-dim": "#e9c176",
+              "tertiary-fixed-dim": "#bcc3ff",
+              "on-primary-fixed": "#410000",
+              "on-background": "#e5e2e1",
+              "on-tertiary-container": "#9ea9ff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .crimson-gradient {
+            background: linear-gradient(45deg, #ffb4a8, #8B0000);
+        }
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#131313]/60 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="font-['Noto_Serif'] text-2xl tracking-tighter font-black text-[#e5e2e1]">OBSIDIAN</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="index.html">Home</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#ffb4a8] border-b-2 border-[#8B0000] pb-1" href="artists.html">Artists</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="portfolio.html">Portfolio</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="about.html">About</a>
+</div>
+<button class="px-6 py-2 crimson-gradient text-on-primary font-label font-bold uppercase text-xs tracking-widest hover:scale-95 duration-200 ease-in-out">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="px-8 md:px-16 mb-24">
+<div class="max-w-7xl mx-auto">
+<span class="font-label text-secondary text-xs font-extrabold tracking-[0.2em] uppercase mb-4 block">The Collective</span>
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter leading-none max-w-4xl">
+                    Masters of the <span class="text-primary italic">Everlasting</span> Mark.
+                </h1>
+<p class="mt-8 font-body text-on-surface-variant max-w-xl text-lg leading-relaxed">
+                    Our residents are more than tattooists; they are curators of skin, specializing in precise editorial aesthetics and high-contrast narratives.
+                </p>
+</div>
+</section>
+<!-- Artists Gallery -->
+<section class="px-8 md:px-16 space-y-40">
+<!-- Artist 01: Elias Thorne -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 z-0 text-surface-container-highest font-headline text-[12rem] leading-none opacity-20 font-black">01</div>
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative z-10 border border-outline-variant/10">
+<img alt="Elias Thorne Artist Portrait" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" data-alt="Moody black and white portrait of a male tattoo artist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8">
+<div>
+<span class="font-label text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Specialty: Dark Illustrative</span>
+<h2 class="font-headline text-6xl font-bold tracking-tight text-on-surface">Elias Thorne</h2>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">
+                        With a decade of experience in the shadows, Elias specializes in high-contrast illustrative pieces that blend Victorian gothic elements with modern anatomical precision. His work is characterized by deep blacks and ethereal line work.
+                    </p>
+<div class="pt-4">
+<button class="group flex items-center gap-4 text-secondary font-label font-bold text-sm tracking-widest uppercase">
+                            View Portfolio
+                            <span class="h-[2px] w-12 bg-secondary group-hover:w-20 transition-all duration-300"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Artist 02: Selene Vane -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -bottom-10 -right-10 z-0 text-surface-container-highest font-headline text-[12rem] leading-none opacity-20 font-black">02</div>
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative z-10 border border-outline-variant/10">
+<img alt="Selene Vane Artist Portrait" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" data-alt="Sophisticated portrait of a female artist in a dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8 text-right md:text-left">
+<div>
+<span class="font-label text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Specialty: Fine Line Realism</span>
+<h2 class="font-headline text-6xl font-bold tracking-tight text-on-surface">Selene Vane</h2>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed md:ml-auto max-w-md">
+                        Selene is the master of the "Whisper Needle." Her work focuses on micro-realism and fine line botanicals that feel like they were etched into the skin by sunlight itself. Elegant, timeless, and hauntingly beautiful.
+                    </p>
+<div class="pt-4 flex justify-end md:justify-start">
+<button class="group flex items-center gap-4 text-secondary font-label font-bold text-sm tracking-widest uppercase">
+                            View Portfolio
+                            <span class="h-[2px] w-12 bg-secondary group-hover:w-20 transition-all duration-300"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Artist 03: Marcus Draven -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 z-0 text-surface-container-highest font-headline text-[12rem] leading-none opacity-20 font-black">03</div>
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative z-10 border border-outline-variant/10">
+<img alt="Marcus Draven Artist Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up portrait of a male artist with tattoos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8">
+<div>
+<span class="font-label text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Specialty: Neo-Traditional Noir</span>
+<h2 class="font-headline text-6xl font-bold tracking-tight text-on-surface">Marcus Draven</h2>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">
+                        Marcus reimagines traditional motifs through a dark, editorial lens. His "Noir" style utilizes heavy saturated blacks paired with stark skin breaks to create bold, readable art that commands attention from across the room.
+                    </p>
+<div class="pt-4">
+<button class="group flex items-center gap-4 text-secondary font-label font-bold text-sm tracking-widest uppercase">
+                            View Portfolio
+                            <span class="h-[2px] w-12 bg-secondary group-hover:w-20 transition-all duration-300"></span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Style List Component -->
+<section class="mt-40 bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8 md:px-16">
+<h3 class="font-headline text-4xl mb-16 text-center italic">Curated Specialties</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group border-l border-outline-variant/30 pl-6 py-4">
+<span class="font-headline text-3xl text-surface-variant block mb-2">01</span>
+<h4 class="font-label text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Surrealism</h4>
+</div>
+<div class="group border-l border-outline-variant/30 pl-6 py-4">
+<span class="font-headline text-3xl text-surface-variant block mb-2">02</span>
+<h4 class="font-label text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Ornamental</h4>
+</div>
+<div class="group border-l border-outline-variant/30 pl-6 py-4">
+<span class="font-headline text-3xl text-surface-variant block mb-2">03</span>
+<h4 class="font-label text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Cyber Sigilism</h4>
+</div>
+<div class="group border-l border-outline-variant/30 pl-6 py-4">
+<span class="font-headline text-3xl text-surface-variant block mb-2">04</span>
+<h4 class="font-label text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Fine Line</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 text-center px-8">
+<div class="max-w-3xl mx-auto border border-outline-variant/20 p-16 relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-background px-4 font-label text-xs uppercase tracking-[0.3em] text-secondary">Inquiry</div>
+<h2 class="font-headline text-5xl md:text-7xl font-bold mb-8">Secure Your Session</h2>
+<p class="font-body text-on-surface-variant mb-12 text-lg">Our artists operate by appointment only to ensure the highest level of focus and dedication to your custom design.</p>
+<button class="px-12 py-5 crimson-gradient text-on-primary font-label font-bold uppercase text-sm tracking-widest hover:scale-105 transition-transform">
+                    Start Your Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full rounded-none border-t border-[#353534]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 py-20 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Noto_Serif'] text-xl font-bold text-[#e5e2e1] mb-6">OBSIDIAN</div>
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 leading-relaxed">
+                    A Sanctuary of Skin and Shadow. Curated tattoo artistry in a high-end editorial environment.
+                </p>
+</div>
+<div>
+<h5 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">Follow</h5>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Instagram</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Twitter</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Vimeo</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">Gallery</h5>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Location</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Contact</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Hours</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">Newsletter</h5>
+<div class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none text-xs font-label focus:ring-0 w-full p-0" placeholder="JOIN THE VOID" type="email"/>
+<button class="material-symbols-outlined text-primary">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="border-t border-[#353534]/10 py-10 px-16 max-w-7xl mx-auto flex justify-between items-center">
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/40">© 2024 Obsidian Gallery. All Rights Reserved.</p>
+<div class="flex gap-8">
+<span class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/40">Privacy</span>
+<span class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/40">Terms</span>
+</div>
+</div>
+</footer>
+</body></html>

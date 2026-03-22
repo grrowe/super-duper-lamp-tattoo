@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#ffdad6",
+              "on-surface": "#e5e2e1",
+              "inverse-surface": "#e5e2e1",
+              "surface-dim": "#131313",
+              "outline-variant": "#5a403c",
+              "surface-bright": "#393939",
+              "primary-container": "#8b0000",
+              "tertiary-fixed-dim": "#bcc3ff",
+              "surface-variant": "#353534",
+              "error-container": "#93000a",
+              "tertiary-container": "#0025c8",
+              "primary-fixed": "#ffdad4",
+              "on-tertiary-container": "#9ea9ff",
+              "on-secondary-container": "#dab36a",
+              "error": "#ffb4ab",
+              "surface": "#131313",
+              "on-primary-container": "#ff907f",
+              "on-secondary-fixed": "#261900",
+              "on-error": "#690005",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface-container": "#201f1f",
+              "secondary": "#e9c176",
+              "on-tertiary-fixed-variant": "#0d2ccc",
+              "surface-container-high": "#2a2a2a",
+              "primary": "#ffb4a8",
+              "surface-tint": "#ffb4a8",
+              "on-tertiary-fixed": "#000d60",
+              "surface-container-low": "#1c1b1b",
+              "on-background": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "outline": "#aa8984",
+              "on-surface-variant": "#e3beb8",
+              "secondary-fixed": "#ffdea5",
+              "on-primary": "#690000",
+              "secondary-container": "#604403",
+              "tertiary": "#bcc3ff",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-secondary": "#412d00",
+              "surface-container-lowest": "#0e0e0e",
+              "background": "#131313",
+              "on-primary-fixed-variant": "#920703",
+              "on-tertiary": "#001a98",
+              "tertiary-fixed": "#dfe0ff",
+              "inverse-primary": "#b52619",
+              "on-primary-fixed": "#410000"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .crimson-gradient {
+            background: linear-gradient(45deg, #ffb4a8, #8B0000);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(229, 226, 225, 0.3);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="font-headline text-2xl tracking-tighter font-black text-[#e5e2e1]">OBSIDIAN</div>
+<div class="hidden md:flex gap-12">
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-[#ffb4a8] border-b-2 border-[#8B0000] pb-1" href="index.html">Home</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="artists.html">Artists</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="portfolio.html">Portfolio</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="about.html">About</a>
+</div>
+<button class="bg-primary-container px-6 py-2 font-label text-xs font-bold uppercase tracking-widest hover:scale-95 transition-all duration-200">
+                Book Now
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 grayscale" data-alt="Close up of artistic black ink tattoo work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOEkce4uefYN1el4NyTPCqdXk47cJyK5WsuSG05LKx7kL9Ns24WwhdVM8gXTM-uC5g2ayU8m_fxHbPZX11WD8NCoWuMW9b4iEMeq7Drj__RfdS1reXe661gNtpve3HpmY2VbvZXaZei1nzJHVqQFr22Gw-eJr_N2ZdF61xWB9SrSvnxZCZETe3X0puRl_SnQ4RJK6psW-lOvXIoUcVWpDAn_rDbGyti7AA0pXJhYKnKq6AIUamVkOmNVV3KKhxRNFEY_17RsM9IOg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-4xl">
+<span class="font-label text-secondary uppercase tracking-[0.3em] mb-6 block text-sm">Fine Art &amp; Permanent Ink</span>
+<h1 class="font-headline text-6xl md:text-8xl font-black leading-tight mb-8 tracking-tighter italic">
+                        THE GALLERY OF <br/>
+<span class="text-primary">OBSIDIAN</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                        Where technical precision meets visceral artistry. We transform the human canvas into a living monograph of high-contrast narratives.
+                    </p>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="crimson-gradient px-10 py-5 font-label font-bold uppercase tracking-widest text-on-primary">
+                            Book Your Consultation
+                        </button>
+<button class="border border-outline-variant px-10 py-5 font-label font-bold uppercase tracking-widest hover:bg-surface-container-high transition-colors">
+                            View Collections
+                        </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 right-8 hidden lg:block">
+<div class="flex flex-col gap-8">
+<div class="h-32 w-px bg-outline-variant mx-auto"></div>
+<span class="rotate-90 text-xs tracking-[0.5em] uppercase font-label origin-left translate-x-1/2 whitespace-nowrap opacity-50">Scroll to Explore</span>
+</div>
+</div>
+</section>
+<!-- Artists Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<span class="font-label text-secondary uppercase tracking-widest mb-4 block">The Hands Behind the Ink</span>
+<h2 class="font-headline text-5xl font-bold italic">Master Residents</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-light">Each artist at Obsidian is hand-selected for their distinct visual language and technical mastery of the medium.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Artist 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Portrait of a professional tattoo artist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaP0tSA79fZNimWvoFhRpxdRdV0DFyzJN07hScKrreeR3t0YZMfr3F8wKWqP1o_lx8HlKkHbEXaWl4-GhavzYVPHB-jIIh0iu9KW24-kiy1pdLE4J_4ncJPz5UhMEmMICU693wP9Hk_UMwvCckhz87SUbZVjE66thpDo1VFDwUE9HERYNsXDI1AHje0suELKgZCNidtzAbjofzGpJAeerPoR-nxb0-gk9PuEFbr3waN8o59pkT7MkEoENAE33g4goWL9DRAk-HjuY"/>
+</div>
+<h3 class="font-headline text-2xl mb-2">Elias Thorne</h3>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Dark Illustrative</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Specializing in botanical anatomy and surrealist blackwork with atmospheric depth.</p>
+</div>
+<!-- Artist 2 -->
+<div class="group cursor-pointer pt-12 md:pt-24">
+<div class="aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Female tattoo artist focusing on work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFxvD2A_liM_JuUdxn2Oc7Xo-fMvMpBu205NeYCICrBuLEZHlW28I1G3fSIWLynVeKHehJT4NMoUVvS61-SdK3W0xdQznhK_y4ZwLpfK0KVJZS8QHVV779UjVmfoC0lWeIkKPiIk2CWAxfNSUewI6nqJfZ1Zn1SeA0edabHfGJdqWGPYSxk9KwF205MuWZFoy4VSnnxnbxLUX8-U0Rr-P6ii0zoPPoIPn5ofqJTZji9c6NbJWsx6kXNApSRs9z5Ww6FQdLciRLG54"/>
+</div>
+<h3 class="font-headline text-2xl mb-2">Selene Vane</h3>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Fine Line Realism</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Renowned for micro-realism portraits that challenge the boundaries of ink on skin.</p>
+</div>
+<!-- Artist 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Tattoo artist with extensive body art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy6MwKs5otIzUmXpfw94FQEx37ySnS9K6-YMotp3IjA4t3e5RUndtSxm4Ry3JAfM2RQ6DZV0BVEUrb2uxQsSzFhEUx9qgOeJTJaJsiYgKEehBAO2ICo24AzkLMPGwF22m-J7cHTrlmGuCzyNpDRiaE4XR7fMgqMN5ylvViZh14QnwYz71jrb_sJVNu8FPfW6Wuu_QVrWIP3YA0fc75-FR4aiQ3iVj50Wvg0SntmpkEgsbHqcZb0rA146RNm4TBndJdzq1d5k2S-3E"/>
+</div>
+<h3 class="font-headline text-2xl mb-2">Marcus Draven</h3>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-4">Neo-Traditional Noir</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Bold linework infused with modern gothic aesthetics and high-contrast shading.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Preview -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="font-headline text-6xl font-black mb-4">ARCHIVE</h2>
+<div class="h-1 w-24 bg-secondary mx-auto mb-8"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Intricate geometric tattoo design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31avVaKspz9yrB9r2OOPyCRqN9soND1ALHioLllnEpEyKYbXoziE_edYoLo_-Oxvk_i8yYEk7Rb8HIS4qlaLCJZhc-Ty6v4KdFgroumZy2jjfZ4R0NMS5oQ6Z5eNOTg37bVdvdyF2YM64sujX6QFDA7yRrH-hBuuQ_nC9_lB2B98YVeQJ_LAzE6opQI91w7X_1icO8UFbh3i0yMZV6puCsiDIkdjtVomQHrIPZrzIrBnNkAwNxkfahToYdRDAoIysbLu9v29xBVo"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group md:row-span-2">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Minimalist fine line tattoo work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXb84yyIAwmZHuf0Bh6WgYYbY5AUmvMRb1ixUg8vBsp1VUlrgZGPKDl7GClP2RLTzuTGL9yYFdlFXQDvcX_bKLiuhj7KWqBG6f8X6x5q1aNgNa1KMviaMjDvUwhl6zx8AfHmFFXCBdNLzAWidYuCxrWmmizcpzwM2lUzftzkGBr0GKdw3VWrG170lobyDQGCrQpuWc0qyR8SfJE1c3nAX_t8JlgXXXDK1g1RrHIXaqi4zPXHpSZruGJIyhW4GRvxuFg6osZke_RXE"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Large back piece blackwork tattoo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhWiWo1muXD_L3I56TbdCm0UgqghVjN2rxVCCxjgPflkWlh2DqZhTvSS5WSVZf_JSCy-2qfDhLUDxafp_plbW7377CuNBWHJCBLATK7l5JyME2B2ojIX4Wbc3YNIXryhQZiPbELth_1eBFhJWdvuHHN95uMvdW8scM9uInGVpzhO32zwRpE9boHmnqBQ75Bpof9tEQlcbP8PNmp-SsiksUZ5PtG8Apfg111vceatNHD8ifO1jP3kn-QwQ9A6TPLXYCynkBy5vPHqQ"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Detailed tattoo of a skull and flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh3R9LosfEnrLpPscQbBIJ8wIBXp7tI5I31UhuU9UwhLz1lh3o5NaOxoIZsLkpm7panmUhtWjg7cgezj3s3bTrDJUHf0CHDz9k7ajMGx499mhTfw8R0smY4LwimJTnDSj1OrKMR-tUemWhWHmi5Xs54Kr_bt3tE59Np9heSS_WBlPjbhrE-Qw1uvqHSC-2Wy8oU98Y36_gM-6LfYV1r07lHNG9ker7EkI8zAnLkdQbBPF9Ub5Thnng_rbY_Xy2o7u25W3h-jp9vtA"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close up of needle and fresh tattoo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJDl3VkTd4q7aFaiNgogERlrp2Npy2UcVBDdwg_65dnf3t2LuBTqmnOhe3EK14hLWxWFJ5iT5dQfru5rYUXY2wO9YQr0ffpyJ1ES-HFru5MUAai63XqXG88QZlrvik306ln6vMsd23FaEJzGyqvVCPp9a-hlbw1Mw26vHBMf15WqIfce9_SKj6Yr9r4v_bhiXrgCmqEysox9J3bDOtFDLFJ7UTEf8i2XrzNbIrw3Xvl-x0tZ2BOsYYco96mcTRZoXzkoE3PKORghU"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group md:col-span-2">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Artist working in a sterile studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Sve_t4hqYAi7HLmGjhJhqAUP7XMctA45oDDs4-QlfBZPp7Na9ijBDV4Z3winEF-IQt74InVV5hwxpKTe569li2hBPvRdhMzN-DiIKUy4vMAdlv9SBNj7DEsNdpzqTShzckm3UrfQndpSYH3-mjkMqS5nBpB4OzwC1_RgQmeSPMwCimfIDM00lNjFOKr8S5SQHFPpn4Fs4CKDtPiTW93orKEYDEhF7TpIktdNyJEdSMD4ZyPaJk50fQTej4YX3fwwdMPiOJ-W2ps"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Hand tattoo with occult symbols" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD41pgyuZFN5zNGzqX3JPsc6xK03uzSgiW8tZusoyVyfdeiiPeidMQtVhA-xDrl9_TS1Ho6tFzJDPjVAu2uRJVm3SZVRbyDOYbXJ-mlq9C14vIIZHwEHmXL4sPRcRfcc6TauKW5NyOjYjjAAgEXqlw2WdGBSQa4Vd7_Ffg7P0KqCDxh3DyG26da4j0Z_yLypJhui1ilJYbgPhY719PmLtOLVI86cLLsDi4thLy0defq5wlcYrjH06DJ3g54S_pgj1beeJs7AbTfA4Y"/>
+</div>
+</div>
+<div class="mt-16 text-center">
+<a class="inline-flex items-center gap-4 group" href="#">
+<span class="font-label text-xs uppercase tracking-[0.4em]">Explore Full Archive</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Trust & Standards Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 text-9xl font-headline font-black text-stroke opacity-10">ETHOS</div>
+<h2 class="font-headline text-5xl font-bold mb-12 relative z-10 leading-tight">Surgical Precision. <br/>Artistic Soul.</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center border border-secondary text-secondary">
+<span class="material-symbols-outlined">sanitizer</span>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-2">Sterile Environment</h4>
+<p class="text-on-surface-variant text-sm font-light">Hospital-grade sterilization protocols exceeding industry standards for absolute safety.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center border border-secondary text-secondary">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-2">Curated Experience</h4>
+<p class="text-on-surface-variant text-sm font-light">From initial sketch to final reveal, every step is a collaborative artistic journey.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center border border-secondary text-secondary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-2">Premium Pigments</h4>
+<p class="text-on-surface-variant text-sm font-light">We exclusively use vegan-friendly, world-class inks that maintain depth for decades.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative bg-surface-container h-[600px] flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-60" data-alt="Modern high-end tattoo studio interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5lkNEZA8j2ZSBJjfQ_FtkUt-doyQZ2O03Lzg5Jpp0vf-qyf7X3NJ3tkMZCX1lUT-3mn4tZxCyCtgIvI1YmcOeEsw49lQxVkastiD8VCWi77DN1gEFjVT_1Xy2OaWzMC7rITiXvRbk79kTNRnxXQFV_ySBKKRhHhdq9KUndFKKa8UQXsU66VgrzGsLq5C6lh1EwjjgvfpgY_HuK4uRRn3wSW0Ie0bB4eeC7tmIgUF8cte2zxGYg514lttaVWOOndFKJO2TCeZI2nw"/>
+<div class="absolute inset-0 border-[20px] border-surface/50 m-8"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline text-3xl md:text-4xl italic leading-relaxed mb-12">
+                        "Obsidian isn't a studio, it's a sanctuary. The attention to detail and the sheer artistry of Elias surpassed every expectation. My piece is more than a tattoo; it's a permanent legacy."
+                    </p>
+<div>
+<h5 class="font-label uppercase tracking-widest text-secondary text-sm">Julian Richter</h5>
+<p class="text-on-surface-variant text-xs mt-2 uppercase tracking-tighter">Collector Since 2021</p>
+</div>
+<div class="flex justify-center gap-4 mt-16">
+<div class="w-2 h-2 bg-primary"></div>
+<div class="w-2 h-2 bg-surface-container-highest"></div>
+<div class="w-2 h-2 bg-surface-container-highest"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-40 relative bg-surface-container-high overflow-hidden">
+<div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+<span class="text-[20vw] font-black text-surface-container opacity-20 select-none leading-none">OBSIDIAN</span>
+</div>
+<div class="container mx-auto px-8 relative z-10 text-center">
+<h2 class="font-headline text-6xl font-black mb-8">READY TO WEAR YOUR STORY?</h2>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    Our books fill up months in advance. Secure your consultation with one of our master artists today.
+                </p>
+<button class="crimson-gradient px-12 py-6 font-label font-black uppercase tracking-[0.2em] text-on-primary hover:scale-105 transition-all">
+                    Inquire Now
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full rounded-none border-t border-[#353534]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 py-20 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Noto_Serif'] text-xl font-bold text-[#e5e2e1] mb-8">OBSIDIAN</div>
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 leading-loose">
+                    Curating permanent art <br/>
+                    for the refined collector.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">Gallery</h4>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="#">Instagram</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="portfolio.html">Portfolio</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="#">Aftercare</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">Studio</h4>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="#">Location</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="#">Contact</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors" href="#">Hours</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-6">The Collective</h4>
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 leading-relaxed">
+                    1224 Ink Avenue<br/>
+                    Metropolis District<br/>
+                    T: +1 800 OBSIDIAN
+                </p>
+</div>
+</div>
+<div class="px-16 py-8 border-t border-[#353534]/10 text-center">
+<span class="font-['Manrope'] text-[10px] tracking-[0.3em] uppercase text-[#e5e2e1]/40">© 2024 Obsidian Gallery. All Rights Reserved.</span>
+</div>
+</footer>
+</body></html>

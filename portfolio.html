@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&amp;family=Manrope:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "outline-variant": "#5a403c",
+              "on-surface": "#e5e2e1",
+              "tertiary": "#bcc3ff",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-container": "#0025c8",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary": "#001a98",
+              "on-surface-variant": "#e3beb8",
+              "on-error-container": "#ffdad6",
+              "outline": "#aa8984",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#690000",
+              "surface-tint": "#ffb4a8",
+              "surface-container-highest": "#353534",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "background": "#131313",
+              "primary-fixed": "#ffdad4",
+              "on-tertiary-fixed": "#000d60",
+              "primary-container": "#8b0000",
+              "secondary-container": "#604403",
+              "secondary": "#e9c176",
+              "on-secondary": "#412d00",
+              "error": "#ffb4ab",
+              "surface-container": "#201f1f",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#261900",
+              "surface-bright": "#393939",
+              "inverse-primary": "#b52619",
+              "on-tertiary-fixed-variant": "#0d2ccc",
+              "surface-variant": "#353534",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface": "#131313",
+              "on-secondary-container": "#dab36a",
+              "secondary-fixed": "#ffdea5",
+              "on-primary-fixed-variant": "#920703",
+              "on-primary-container": "#ff907f",
+              "primary-fixed-dim": "#ffb4a8",
+              "primary": "#ffb4a8",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#dfe0ff",
+              "secondary-fixed-dim": "#e9c176",
+              "tertiary-fixed-dim": "#bcc3ff",
+              "on-primary-fixed": "#410000",
+              "on-background": "#e5e2e1",
+              "on-tertiary-container": "#9ea9ff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift { transition: background-color 0.3s ease; }
+      body { background-color: #131313; color: #e5e2e1; }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#131313]/60 backdrop-blur-md tonal-shift bg-[#1C1B1B]/80 flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="font-['Noto_Serif'] text-2xl tracking-tighter font-black text-[#e5e2e1]">OBSIDIAN</div>
+<div class="hidden md:flex gap-12">
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="index.html">Home</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="artists.html">Artists</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#ffb4a8] border-b-2 border-[#8B0000] pb-1" href="portfolio.html">Portfolio</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="about.html">About</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container px-6 py-2 text-on-primary font-label font-bold uppercase tracking-widest text-xs scale-100 active:scale-95 duration-200 ease-in-out">
+            Book Now
+        </button>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Title Section -->
+<header class="px-8 md:px-16 mb-24">
+<div class="max-w-7xl mx-auto flex flex-col items-end text-right">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-xs mb-4">Curated Collection</span>
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter leading-none mb-6">
+                    THE ARCHIVE <br/> <span class="text-outline italic">2024</span>
+</h1>
+<p class="max-w-md font-body text-on-surface/60 text-lg leading-relaxed">
+                    A selection of exceptional works produced within the walls of Obsidian Gallery. Every piece is a unique narrative etched in permanence.
+                </p>
+</div>
+</header>
+<!-- Filter Bar -->
+<section class="px-8 md:px-16 mb-16 overflow-x-auto">
+<div class="max-w-7xl mx-auto flex gap-8 items-center border-b border-outline-variant/30 pb-4 min-w-max">
+<button class="font-label text-xs uppercase tracking-widest text-primary border-b border-primary pb-2">All Works</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Blackwork</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Fine Line</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Neo-Traditional</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Dark Surrealism</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Ornamental</button>
+</div>
+</section>
+<!-- Gallery Grid (Asymmetric) -->
+<section class="px-8 md:px-16 mb-32">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+<!-- Large Featured Item -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Intricate blackwork tattoo on a full back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Blackwork</span>
+<h3 class="font-headline text-2xl">The Void Sigil</h3>
+</div>
+</div>
+</div>
+<!-- Secondary Items -->
+<div class="md:col-span-5 flex flex-col gap-12 md:pt-24">
+<div class="group cursor-pointer">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Detailed fine line floral tattoo on forearm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Fine Line</span>
+<h3 class="font-headline text-xl">Botanical Etching</h3>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer pr-12">
+<div class="aspect-[3/4] bg-surface-container-low overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Neo traditional lion tattoo with vibrant colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Neo-Traditional</span>
+<h3 class="font-headline text-xl">King's Resolve</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- Second Row Asymmetric -->
+<div class="md:col-span-4 group cursor-pointer md:mt-[-8rem]">
+<div class="aspect-[3/4] bg-surface-container-low overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract dark surrealism ink on chest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Dark Surrealism</span>
+<h3 class="font-headline text-xl">Echoes of Silence</h3>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 group cursor-pointer">
+<div class="aspect-[16/9] bg-surface-container-low overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large scale ornamental pattern on leg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Ornamental</span>
+<h3 class="font-headline text-2xl">Geometrical Sanctum</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Artist Curated List Component -->
+<section class="px-8 md:px-16 py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-20 gap-8">
+<h2 class="font-headline text-4xl md:text-6xl font-black">STUDIO MASTERS</h2>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface/40">Our Resident Artisans</p>
+</div>
+<div class="grid grid-cols-1 gap-24">
+<div class="flex flex-col md:flex-row gap-12 items-center group">
+<div class="relative">
+<span class="absolute -top-12 -left-8 font-headline text-9xl text-surface-variant/30 select-none">01</span>
+<div class="w-48 h-48 bg-surface-container-highest overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a professional tattoo artist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+</div>
+</div>
+<div class="flex-1">
+<h3 class="font-headline text-3xl mb-2">Elias Thorne</h3>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mb-6">Principal — Blackwork &amp; Surrealism</p>
+<p class="max-w-xl text-on-surface/60 leading-relaxed mb-8">
+                                Elias explores the intersection of nightmare and myth. His work is characterized by heavy contrast and atmospheric storytelling.
+                            </p>
+<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="#">View Full Gallery</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse gap-12 items-center group">
+<div class="relative">
+<span class="absolute -top-12 -right-8 font-headline text-9xl text-surface-variant/30 select-none">02</span>
+<div class="w-48 h-48 bg-surface-container-highest overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Female tattoo artist working on an intricate design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
+</div>
+</div>
+<div class="flex-1 text-left md:text-right">
+<h3 class="font-headline text-3xl mb-2">Serafina Moon</h3>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mb-6">Senior — Fine Line Botanical</p>
+<p class="max-w-xl md:ml-auto text-on-surface/60 leading-relaxed mb-8">
+                                With a surgical precision, Serafina replicates the delicate structures of nature. Her pieces are whispers on the skin.
+                            </p>
+<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="#">View Full Gallery</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Transactional CTA Section -->
+<section class="px-8 md:px-16 py-40 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-7xl font-black mb-12 tracking-tight">TRANSFORM YOUR VISION</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-12 py-5 font-label font-black uppercase tracking-widest text-sm transition-transform active:scale-95">
+                        Start A Consultation
+                    </button>
+<button class="border border-outline-variant text-on-surface px-12 py-5 font-label font-bold uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-colors">
+                        Studio Information
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-none border-t border-[#353534]/20 bg-[#131313] tonal-shift bg-[#1C1B1B]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 py-20 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="font-['Noto_Serif'] text-xl font-bold text-[#e5e2e1] mb-6">OBSIDIAN</div>
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 leading-loose">
+                    Defining the new standard of tattoo artistry through architectural precision and editorial vision.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Inquiries</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Contact</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Hours</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Location</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Connect</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Instagram</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Twitter</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Behance</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Newsletter</h4>
+<div class="relative">
+<input class="bg-transparent border-b border-outline-variant/30 w-full py-2 text-xs font-label uppercase tracking-widest focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="YOUR EMAIL" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-sm text-primary">east</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-16 pb-8 max-w-7xl mx-auto border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Manrope'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40">© 2024 Obsidian Gallery. All Rights Reserved.</span>
+<span class="font-['Manrope'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40">Crafted for Permanent Narratives</span>
+</div>
+</footer>
+</body></html>
