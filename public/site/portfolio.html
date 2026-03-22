@@ -89,7 +89,7 @@
 <a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#ffb4a8] border-b-2 border-[#8B0000] pb-1" href="/portfolio">Portfolio</a>
 <a class="font-['Noto_Serif'] font-bold tracking-tight uppercase text-sm text-[#e5e2e1] hover:text-[#ffb4a8] transition-colors" href="/about">About</a>
 </div>
-<button class="bg-gradient-to-r from-primary to-primary-container px-6 py-2 text-on-primary font-label font-bold uppercase tracking-widest text-xs scale-100 active:scale-95 duration-200 ease-in-out">
+<button class="bg-gradient-to-r from-primary to-primary-container px-6 py-2 text-on-primary font-label font-bold uppercase tracking-widest text-xs scale-100 active:scale-95 duration-200 ease-in-out" onclick="window.location.href='/about#contact'">
             Book Now
         </button>
 </nav>
@@ -109,12 +109,12 @@
 <!-- Filter Bar -->
 <section class="px-8 md:px-16 mb-16 overflow-x-auto">
 <div class="max-w-7xl mx-auto flex gap-8 items-center border-b border-outline-variant/30 pb-4 min-w-max">
-<button class="font-label text-xs uppercase tracking-widest text-primary border-b border-primary pb-2">All Works</button>
-<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Blackwork</button>
-<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Fine Line</button>
-<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Neo-Traditional</button>
-<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Dark Surrealism</button>
-<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2">Ornamental</button>
+<button class="font-label text-xs uppercase tracking-widest text-primary border-b border-primary pb-2" data-filter="all-works">All Works</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2" data-filter="blackwork">Blackwork</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2" data-filter="fine-line">Fine Line</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2" data-filter="neo-traditional">Neo-Traditional</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2" data-filter="dark-surrealism">Dark Surrealism</button>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface/40 hover:text-on-surface transition-colors pb-2" data-filter="ornamental">Ornamental</button>
 </div>
 </section>
 <!-- Gallery Grid (Asymmetric) -->
@@ -126,7 +126,7 @@
 <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Intricate blackwork tattoo on a full back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
 <span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Blackwork</span>
-<h3 class="font-headline text-2xl">The Void Sigil</h3>
+<h3 class="font-headline text-2xl" data-portfolio-item="blackwork">The Void Sigil</h3>
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@
 <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Detailed fine line floral tattoo on forearm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
 <span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Fine Line</span>
-<h3 class="font-headline text-xl">Botanical Etching</h3>
+<h3 class="font-headline text-xl" data-portfolio-item="fine-line">Botanical Etching</h3>
 </div>
 </div>
 </div>
@@ -146,7 +146,7 @@
 <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Neo traditional lion tattoo with vibrant colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
 <span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Neo-Traditional</span>
-<h3 class="font-headline text-xl">King's Resolve</h3>
+<h3 class="font-headline text-xl" data-portfolio-item="neo-traditional">King's Resolve</h3>
 </div>
 </div>
 </div>
@@ -157,7 +157,7 @@
 <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract dark surrealism ink on chest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
 <span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Dark Surrealism</span>
-<h3 class="font-headline text-xl">Echoes of Silence</h3>
+<h3 class="font-headline text-xl" data-portfolio-item="dark-surrealism">Echoes of Silence</h3>
 </div>
 </div>
 </div>
@@ -166,7 +166,7 @@
 <img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large scale ornamental pattern on leg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWDg3ijU3uWLpBgGgpWsc_Rbq_XpjnQWXhrvz78nhRHSfi_kTRMxA7-XWJXHhXNMRU2JCH71OAPhUUsAp5HUbmoqrtLl4ar0W2eI3MsJHu9i0yh2UZVZclVx3jk-6--_H5cl78NrXOpXE3xFtwEMwAkyYHYKLkmNf_q-WAIQi-QWFkmrDeQL9lwA3MpbUI0SzHUTrShYDN4F-79appfIRJHt0xT7HY4WkyYAYLKDh4XUOJ-rOYYmWo4j5Y0b2ssKuj1HkGCbW9lY"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
 <span class="font-label text-secondary text-[10px] tracking-widest uppercase mb-2">Ornamental</span>
-<h3 class="font-headline text-2xl">Geometrical Sanctum</h3>
+<h3 class="font-headline text-2xl" data-portfolio-item="ornamental">Geometrical Sanctum</h3>
 </div>
 </div>
 </div>
@@ -193,7 +193,7 @@
 <p class="max-w-xl text-on-surface/60 leading-relaxed mb-8">
                                 Elias explores the intersection of nightmare and myth. His work is characterized by heavy contrast and atmospheric storytelling.
                             </p>
-<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="#">View Full Gallery</a>
+<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="/artists">View Full Gallery</a>
 </div>
 </div>
 <div class="flex flex-col md:flex-row-reverse gap-12 items-center group">
@@ -209,7 +209,7 @@
 <p class="max-w-xl md:ml-auto text-on-surface/60 leading-relaxed mb-8">
                                 With a surgical precision, Serafina replicates the delicate structures of nature. Her pieces are whispers on the skin.
                             </p>
-<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="#">View Full Gallery</a>
+<a class="font-label text-xs uppercase tracking-widest border-b border-on-surface/20 pb-1 hover:border-primary transition-colors inline-block" href="/artists">View Full Gallery</a>
 </div>
 </div>
 </div>
@@ -220,10 +220,10 @@
 <div class="max-w-3xl mx-auto">
 <h2 class="font-headline text-4xl md:text-7xl font-black mb-12 tracking-tight">TRANSFORM YOUR VISION</h2>
 <div class="flex flex-col md:flex-row gap-6 justify-center">
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-12 py-5 font-label font-black uppercase tracking-widest text-sm transition-transform active:scale-95">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-12 py-5 font-label font-black uppercase tracking-widest text-sm transition-transform active:scale-95" onclick="window.location.href='/about#contact'">
                         Start A Consultation
                     </button>
-<button class="border border-outline-variant text-on-surface px-12 py-5 font-label font-bold uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-colors">
+<button class="border border-outline-variant text-on-surface px-12 py-5 font-label font-bold uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-colors" onclick="window.location.href='/about'">
                         Studio Information
                     </button>
 </div>
@@ -242,24 +242,24 @@
 <div>
 <h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Inquiries</h4>
 <ul class="flex flex-col gap-4">
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Contact</a></li>
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Hours</a></li>
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Location</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="/about#contact">Contact</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="/about#contact">Hours</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="/about#contact">Location</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Connect</h4>
 <ul class="flex flex-col gap-4">
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Instagram</a></li>
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Twitter</a></li>
-<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="#">Behance</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e5e2e1]/60 hover:text-[#ffb4a8] transition-colors duration-300" href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-['Manrope'] text-xs tracking-widest uppercase text-[#ffb4a8] mb-8 font-bold">Newsletter</h4>
 <div class="relative">
 <input class="bg-transparent border-b border-outline-variant/30 w-full py-2 text-xs font-label uppercase tracking-widest focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="YOUR EMAIL" type="email"/>
-<button class="absolute right-0 top-1/2 -translate-y-1/2">
+<button class="absolute right-0 top-1/2 -translate-y-1/2" type="button" onclick="window.location.href='mailto:bookings@obsidiangallery.com'">
 <span class="material-symbols-outlined text-sm text-primary">east</span>
 </button>
 </div>
@@ -270,4 +270,31 @@
 <span class="font-['Manrope'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40">Crafted for Permanent Narratives</span>
 </div>
 </footer>
+
+<script>
+(function(){
+  const buttons=[...document.querySelectorAll('[data-filter]')];
+  if(!buttons.length) return;
+  const itemHeads=[...document.querySelectorAll('[data-portfolio-item]')];
+  const cards=itemHeads.map(h=>h.closest('.group')).filter(Boolean);
+  function setFilter(filter){
+    buttons.forEach(b=>{
+      const active=b.getAttribute('data-filter')===filter;
+      b.classList.toggle('text-primary',active);
+      b.classList.toggle('border-b',active);
+      b.classList.toggle('border-primary',active);
+      if(!active){ b.classList.remove('text-on-surface'); b.classList.add('text-on-surface/40'); }
+      else { b.classList.remove('text-on-surface/40'); }
+    });
+    cards.forEach(card=>{
+      const heading=card.querySelector('[data-portfolio-item]');
+      const cat=heading?.getAttribute('data-portfolio-item');
+      const show=(filter==='all-works'||cat===filter);
+      card.style.display=show?'':'none';
+    });
+  }
+  buttons.forEach(b=>b.addEventListener('click',()=>setFilter(b.getAttribute('data-filter'))));
+})();
+</script>
+
 </body></html>
