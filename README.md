@@ -1,28 +1,48 @@
-# Obsidian Gallery Website
+# Obsidian Gallery (Next.js + Netlify)
 
-Multi-page static site generated from Stitch export.
+This project is now a Next.js app that serves the Stitch-exported pages through clean routes.
 
-## Pages
+## Routes
 
-- `index.html` — Home
-- `artists.html` — Artists
-- `portfolio.html` — Portfolio
-- `about.html` — About
-- `DESIGN.md` — Design system notes from Stitch export
+- `/` → `public/site/index.html`
+- `/about` → `public/site/about.html`
+- `/artists` → `public/site/artists.html`
+- `/portfolio` → `public/site/portfolio.html`
 
-## Run locally
-
-From this folder:
+## Local development
 
 ```bash
-python3 -m http.server 8080
+npm install
+npm run dev
 ```
 
-Then open:
+Open: <http://localhost:3000>
 
-- <http://localhost:8080/index.html>
+## Build
 
-## Notes
+```bash
+npm run build
+npm run start
+```
 
-- Uses Tailwind via CDN and Google Fonts.
-- Navigation links are wired between pages.
+## Netlify deploy
+
+This repo includes `netlify.toml` with Next.js plugin support.
+
+### Option A: Netlify UI (recommended)
+1. Push repo to GitHub.
+2. In Netlify: **Add new site** → **Import from Git**.
+3. Select this repo.
+4. Build settings should auto-detect from `netlify.toml`:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+5. Deploy.
+
+### Option B: Netlify CLI
+```bash
+npm install -g netlify-cli
+netlify login
+netlify init
+netlify deploy --build
+netlify deploy --prod --build
+```
